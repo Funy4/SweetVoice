@@ -14,11 +14,32 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
+    signingConfigs {
         release {
+            def signFile = project.rootProject.file('./example_password.jks')
+            if (signFile.exists()) {
+                storeFile signFile
+                storePassword "EXAMPLE_PASSWORD"
+                keyAlias "key0"
+                keyPassword "EXAMPLE_PASSWORD"
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
             minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
     }
 }
 
