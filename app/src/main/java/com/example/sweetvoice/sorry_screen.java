@@ -10,5 +10,8 @@ public class sorry_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sorry_screen);
+        getSupportActionBar().hide();
+
+
     }
 }

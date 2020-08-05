@@ -36,7 +36,7 @@ public class new_password extends AppCompatActivity {
                             finish();
                         }else{
                             Toast.makeText(new_password.this,
-                                    "Поля не совпадают",
+                                    "The fields don't match",
                                     Toast.LENGTH_SHORT
                             ).show();
 

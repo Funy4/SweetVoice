@@ -4,6 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sorry_screen">
+    tools:context=".sorry_screen"
+    android:background="@drawable/bg">
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="62dp"
+        android:gravity="center"
+        android:text="Sorry, no one at this time. Try later"
 
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

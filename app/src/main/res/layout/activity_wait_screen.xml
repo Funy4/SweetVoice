@@ -4,6 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".wait_screen">
+    tools:context=".wait_screen"
+    android:background="@drawable/bg">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="399dp"
+        android:text=" Wait a bit. The computer collects all the people who are online now."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

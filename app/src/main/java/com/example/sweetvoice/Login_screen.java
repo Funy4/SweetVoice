@@ -51,7 +51,7 @@ public class Login_screen extends AppCompatActivity {
                             finish();
                         }else
                             Toast.makeText(Login_screen.this,
-                                    "Неправильный логин или пароль",
+                                    "Invalid username or password",
                                     Toast.LENGTH_SHORT).show();
                     }
                 }
