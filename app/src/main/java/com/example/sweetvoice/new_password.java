@@ -30,7 +30,7 @@ public class new_password extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if (log.equals(pass) && log.length() > 0 && pass.length() > 0){
+                        if (log.getText().toString().equals(pass.getText().toString()) && log.getText().length() > 0 && pass.getText().length() > 0){
                             Intent intent = new Intent(new_password.this, girls_boys_screen.class);
                             startActivity(intent);
                             finish();

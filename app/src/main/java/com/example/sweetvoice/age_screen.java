@@ -30,7 +30,7 @@ public class age_screen extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if (Integer.parseInt(age.getText().toString()) > 18){
+                        if (Integer.parseInt(age.getText().toString()) >= 18){
                             Intent i = new Intent(age_screen.this, wait_screen.class);
                             startActivity(i);
                             finish();

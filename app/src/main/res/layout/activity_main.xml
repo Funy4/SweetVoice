@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg"
+
         android:lineHeight="33dp"
-        android:paddingLeft="130dp"
-        android:paddingTop="196dp"
-        android:paddingRight="113dp"
-        android:paddingBottom="411dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginRight="113dp"
+        android:layout_marginBottom="411dp"
         android:text="Welcome"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
 
 
         android:textSize="28sp"
