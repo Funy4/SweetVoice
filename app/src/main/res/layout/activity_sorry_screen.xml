@@ -14,7 +14,7 @@
         android:layout_marginTop="171dp"
         android:layout_marginEnd="62dp"
         android:gravity="center"
-        android:text="Sorry, no one at this time. Try later"
+        android:text="@string/end"
 
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
