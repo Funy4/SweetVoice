@@ -18,4 +18,12 @@
 
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
-#-renamesourcefileattribute SourceFile
+-renamesourcefileattribute SourceFile
+
+-optimizations   code/simplification/arithmetic,!code/simplification/cast,!field/*,! class/merging/*,!method/inlining/*
+-optimizationpasses 5
+-allowaccessmodification
+-obfuscationdictionary method-dictionary.txt
+-packageobfuscationdictionary package-dictionary.txt
+-classobfuscationdictionary class-dictionary.txt
+
