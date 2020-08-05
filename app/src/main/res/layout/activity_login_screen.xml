@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_screen"
+    android:background="@drawable/bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:layout_marginLeft="116dp"
+            android:layout_marginRight="116dp"
+            android:fontFamily="sans-serif"
+
+            android:textSize="16dp"
+            android:lineHeight="19dp"
+
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="Enter login details" />
+
+        <EditText
+            android:id="@+id/txtLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="91dp"
+            android:layout_marginRight="32dp"
+            android:fontFamily="sans-serif"
+
+            android:background="@drawable/txt_style"
+            android:padding="10dp"
+
+            android:inputType="textPersonName"
+            android:text="Login"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/txt_style"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:fontFamily="sans-serif"
+
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/forgTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="201dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="31dp"
+            android:fontFamily="sans-serif"
+
+            android:gravity="right"
+
+            android:text="Forgot password?"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/btn_next_style"
+
+            android:textSize="18dp"
+            android:lineHeight="21dp"
+            android:text="Next" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
