@@ -15,7 +15,6 @@ public class girls_boys_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_girls_boys_screen);
-        getSupportActionBar().hide();
         Listener();
     }
     public void Listener(){

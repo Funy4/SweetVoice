@@ -18,7 +18,6 @@ public class age_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_age_screen);
-        getSupportActionBar().hide();
 
         Listener();
     }
@@ -30,16 +29,20 @@ public class age_screen extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if (Integer.parseInt(age.getText().toString()) >= 18){
-                            Intent i = new Intent(age_screen.this, wait_screen.class);
-                            startActivity(i);
-                            finish();
-                        }else{
+                        if (Integer.parseInt(age.getText().toString()) <= 18){
+                            Toast.makeText(age_screen.this,
+                                    "You entered the wrong age.",
+                                    Toast.LENGTH_SHORT).show();
+                            age.setText("");
+                        }else if ( Integer.parseInt(age.getText().toString()) >= 100){
                             Toast.makeText(age_screen.this,
                                     "You must be over 18 years old.",
                                     Toast.LENGTH_SHORT).show();
-
                             age.setText("");
+                        }else{
+                            Intent i = new Intent(age_screen.this, wait_screen.class);
+                            startActivity(i);
+                            finish();
                         }
                     }
                 }

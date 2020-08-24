@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/bg">
+    tools:context=".splash"
+    android:background="@drawable/bg"
+    tools:ignore="MissingDefaultResource">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
         android:lineHeight="33dp"
-        android:layout_marginLeft="130dp"
         android:layout_marginTop="196dp"
-        android:layout_marginRight="113dp"
+        android:gravity="center"
         android:layout_marginBottom="411dp"
         android:text="Welcome"
         android:textAlignment="center"

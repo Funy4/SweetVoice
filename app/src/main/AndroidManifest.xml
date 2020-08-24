@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".sorry_screen"></activity>
+        <activity android:name=".info"></activity>
+        <activity android:name=".sorry_screen" />
         <activity android:name=".wait_screen" />
         <activity android:name=".age_screen" />
         <activity android:name=".girls_boys_screen" />
-        <activity android:name=".new_password" />
+        <activity android:name=".sign_up" />
         <activity
-            android:name=".Login_screen"
+            android:name=".login_screen"
             android:label="Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
